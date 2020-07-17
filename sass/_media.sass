@@ -1,0 +1,123 @@
+@media (max-width: 1200px)
+    .header
+        &__item
+            font-size: 13px
+    .promo
+        &__title
+            font-size: 50px
+        &__subtitle
+            font-size: 28px
+    .advantages
+        &__item
+            &__descr
+                &__text
+                    width: 300px
+
+@media (max-width: 768px)
+    .header
+        &__col
+            display: flex
+        &__item
+            font-size: 11px
+    .subheader-sait
+        &__url
+            &__link
+                font-size: 18px
+        &__descr
+            font-size: 10px
+    .subheader-tel
+        &__phone
+            font-size: 18px
+    .subheader-button 
+        font-size: 11px
+        height: 40px
+    .promo
+        &__title
+            text-align: center
+    .advantages
+        &__title
+            text-align: center
+        &__item
+            &__descr
+                &__text
+                    width: 540px
+    .mobile-subtitle
+        text-align: center
+    .cars
+        padding-bottom: 40px
+        min-height: 310px
+    .require
+        padding: 48px 64px
+@media (max-width: 767px)
+    .header
+        &__col
+            position: fixed
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100vh
+            padding: 20px 15px
+            flex-direction: column
+            background-color: #000000b6
+            justify-content: center
+            transition: all 1s
+            text-align: center
+        &_active
+            left: 0
+            text-align: center
+        &__item
+            padding-right: 0
+            font-size: 20px
+            font-weight: 500
+            margin: 10px 0
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 30px
+        height: 12px
+        z-index: 5
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background: #fff
+            z-index: 10
+            color: #ffffff
+            margin-bottom: 3px
+            transition: all 0.5s
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .subheader-tel
+        display: none
+    .xs-visible
+        display: block
+    .promo
+        &__descr
+            &__bottom
+                margin-bottom: 50px
+        &__btn
+            margin-bottom: 20px
+    .enjoy
+        &_title
+            text-align: center
+            font-size: 30px
+        &_circle
+            width: 350px
+            height: 470px
+    .cars_car
+        width: 100%
+        top: -55px
+
+
+            
+            
